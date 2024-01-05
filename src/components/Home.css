@@ -1,0 +1,114 @@
+/* Home.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  background-color: white;
+}
+
+.cover {
+  position: relative;
+  text-align: center;
+  overflow: hidden; /* Ensure the overlay covers the whole area */
+}
+
+.dog-image {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Center the image */
+}
+
+/* Apply the overlay to the entire cover */
+.cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color */
+  padding: 20px;
+  width: 80%; /* Adjust width of text overlay */
+}
+
+.text-overlay h1 {
+  font-size: 3rem; /* Adjust heading font size */
+  margin-bottom: 10px;
+}
+
+.text-overlay p {
+  font-size: 1.5rem; /* Adjust paragraph font size */
+  margin: 0;
+  padding: 0 20px; /* Optional: Add padding to the text */
+}
+
+.see-more {
+  background-color: #161A30; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  width: 150px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.see-more:hover {
+  background-color: #F0ECE5; /* Darker background color on hover */
+  color: black; /* Button text color */
+}
+
+/* Your existing styles... */
+
+.additional-info-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.additional-info {
+  text-align: center;
+}
+
+.card {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px; /* Adjust as needed */
+}
+
+.card p {
+  margin: 0;
+}
+
+.card:nth-child(odd) {
+  margin-right: 300px;
+}
+
+.card:nth-child(even) {
+  margin-left: 300px;
+}
+
+.background-color-container {
+  background-color: #394867;
+  height: 300px; /* Adjust height as needed */
+  /* Other styling as required */
+}
